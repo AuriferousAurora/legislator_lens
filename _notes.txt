@@ -1,0 +1,16 @@
+Decisions to be made for Government Tracking application:
+
+- I think that it would be best to build out a prototype separately and learn how to import data via automated scripts at a later date.
+- So here we go: 
+	1. First step was fairly simple. I downloaded a YAML and JSON version of the current legislators and wrote them to a file. For now, they're each saved in the top-level directory, but I'll move them into a separate directory once I have a few different files.
+	2. I also want to write a script to update the data on a regulare basis.
+	3. The only other thing in the main file is a loop the creates a pretty basic list of Legislator class objects with some basic properties.
+	4. I don't think I need to do runtime class generation, but I included a file with a basic class generator in the top directory because I thought it was cool.
+- Next steps:
+	1. Figure out to what extent it would be worth it to modify data or include serialized Python data as is as class attributes/properties.
+	2. Decide on few more basic methods and objects:
+		> bill proposals
+		> bills
+		> committees
+	3. Create a basic workflow based on the aforementioned methods and objects
+	
